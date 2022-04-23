@@ -13,11 +13,11 @@ public class Statement_Switch_3 {
     
    public static void main(String[] args) {
     int day = 4;
-    switch (day) {
-      case 6 -> System.out.println("Today is Saturday");
-      case 7 -> System.out.println("Today is Sunday");
-      default -> System.out.println("Looking forward to the Weekend");
-    }    
+//    switch (day) {
+//      case 6 -> System.out.println("Today is Saturday");
+//      case 7 -> System.out.println("Today is Sunday");
+//      default -> System.out.println("Looking forward to the Weekend");
+//    }
   }
    
 }
