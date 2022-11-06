@@ -1,6 +1,7 @@
 public class AlgoritmaJava {
 
     /**
+     * Algoritma 1
      * Finding the Maximum Element in a Finite Sequence.
      * @param nim the nim [2021230008]
      * @return
@@ -8,7 +9,7 @@ public class AlgoritmaJava {
     static void findMaxElement(int[] nim) {
         int nimMhs = nim.length;
         if (nimMhs > 0) {
-            for (int i = 0; i < nimMhs; i++) {
+            for (int i = 2; i < nimMhs; i++) {
                 if (i < 5) {
                     System.out.println("Result :" +i);
                 }
@@ -17,6 +18,7 @@ public class AlgoritmaJava {
     }
 
     /**
+     * Algoritma 2
      * The Linear Search Algorithm.
      * @param nim the nim [2021230008]
      * @return
@@ -39,6 +41,7 @@ public class AlgoritmaJava {
     }
 
     /**
+     * Algoritma 3
      * Binary Search Algorithm
      * @param nim the nim [2021230008]
      * @return
@@ -63,6 +66,7 @@ public class AlgoritmaJava {
     }
 
     /**
+     * Algoritma 4
      * The Bubble Sort.
      * @param nim the nim [2021230008]
      * @return
@@ -84,20 +88,24 @@ public class AlgoritmaJava {
         }
     }
 
-    static void insertionSort(int[] array) {
-        int n = array.length;
+    /**
+     * Algoritma 5
+     * @param nim the nim
+     */
+    static void insertionSort(int[] nim) {
+        int n = nim.length;
         for (int j = 1; j < n; j++) {
-            int key = array[j];
+            int key = nim[j];
             int i = j-1;
-            while ( (i > -1) && ( array [i] > key ) ) {
-                array [i+1] = array [i];
+            while ( (i > -1) && ( nim [i] > key ) ) {
+                nim [i+1] = nim [i];
                 i--;
             }
-            array[i+1] = key;
+            nim[i+1] = key;
         }
 
         System.out.println("-----------Algoritma 5-------------");
-        for(int i:array){
+        for(int i:nim){
             System.out.print(i+" ");
         }
     }
