@@ -1,3 +1,5 @@
+package Semester2;
+
 public class AlgoritmaJava {
 
     /**
@@ -94,14 +96,17 @@ public class AlgoritmaJava {
      */
     static void insertionSort(int[] nim) {
         int n = nim.length;
-        for (int j = 1; j < n; j++) {
-            int key = nim[j];
-            int i = j-1;
-            while ( (i > -1) && ( nim [i] > key ) ) {
-                nim [i+1] = nim [i];
-                i--;
+        int m = 0;
+        for (int j = 2; j < n; j++) {
+            int i = 1;
+            while ( nim[j] > nim[0]) {
+                i = i + 1;
             }
-            nim[i+1] = key;
+            m = nim[j];
+            for (int k = 0; k < j; k++) {
+               m = nim[j] - k -1;
+            }
+
         }
 
         System.out.println("-----------Algoritma 5-------------");
